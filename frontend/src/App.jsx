@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import Banner from "./components/Banner";
 
 function App() {
   const [question, setQuestion] = useState("");
@@ -46,37 +47,40 @@ function App() {
   };
 
   return (
-    <div className="max-w-xl mx-auto mt-10 p-4 border rounded-lg shadow">
-      <div className="mb-4 space-y-2 h-96 overflow-y-auto" ref={chatRef}>
-        {chat.map((msg, idx) => (
-          <div
-            key={idx}
-            className={msg.sender === "user" ? "text-right" : "text-left"}
-          >
-            <span
-              className={`inline-block p-2 rounded-lg ${
-                msg.sender === "user"
-                  ? "bg-blue-500 text-white"
-                  : "bg-gray-200 text-black"
-              }`}
+    <>
+      <Banner />
+      <div className="max-w-xl mx-auto mt-10 p-4 border rounded-lg shadow">
+        <div className="mb-4 space-y-2 h-96 overflow-y-auto" ref={chatRef}>
+          {chat.map((msg, idx) => (
+            <div
+              key={idx}
+              className={msg.sender === "user" ? "text-right" : "text-left"}
             >
-              {msg.text}
-            </span>
-          </div>
-        ))}
+              <span
+                className={`inline-block p-2 rounded-lg ${
+                  msg.sender === "user"
+                    ? "bg-blue-500 text-white"
+                    : "bg-gray-200 text-black"
+                }`}
+              >
+                {msg.text}
+              </span>
+            </div>
+          ))}
+        </div>
+        <form onSubmit={handleSubmit} className="flex gap-2">
+          <input
+            value={question}
+            onChange={(e) => setQuestion(e.target.value)}
+            className="flex-1 p-2 border rounded"
+            placeholder="Ask me anything..."
+          />
+          <button type="submit" className="bg-blue-500 text-white p-2 rounded">
+            Send
+          </button>
+        </form>
       </div>
-      <form onSubmit={handleSubmit} className="flex gap-2">
-        <input
-          value={question}
-          onChange={(e) => setQuestion(e.target.value)}
-          className="flex-1 p-2 border rounded"
-          placeholder="Ask me anything..."
-        />
-        <button type="submit" className="bg-blue-500 text-white p-2 rounded">
-          Send
-        </button>
-      </form>
-    </div>
+    </>
   );
 }
 
