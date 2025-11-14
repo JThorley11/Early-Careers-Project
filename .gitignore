@@ -23,6 +23,7 @@ dist/
 # Environment variables
 .env
 .env.*
+!.env.example
 
 # ======================
 # Node / React
