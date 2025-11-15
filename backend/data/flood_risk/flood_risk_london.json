@@ -1,0 +1,26 @@
+[
+  {
+    "id": "flood001",
+    "text": "This area has a medium flood risk due to proximity to River Brent and poor drainage.",
+    "location": "London",
+    "postcode": "NW10 3DN",
+    "risk_level": "medium",
+    "risk_score": 0.62
+  },
+  {
+    "id": "flood002",
+    "text": "Low flood risk area with effective flood defenses in place along the Thames.",
+    "location": "London",
+    "postcode": "SE1 7PB",
+    "risk_level": "low",
+    "risk_score": 0.15
+  },
+  {
+    "id": "flood003",
+    "text": "High flood risk zone due to historical flooding events and low elevation.",
+    "location": "London",
+    "postcode": "E1 6AN",
+    "risk_level": "high",
+    "risk_score": 0.85
+  }
+]

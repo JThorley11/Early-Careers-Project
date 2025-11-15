@@ -1,0 +1,26 @@
+[
+  {
+    "id": "flood101",
+    "text": "This area has a medium flood risk due to proximity to the River Irwell and historically high water levels during heavy rainfall.",
+    "location": "Manchester",
+    "postcode": "M3 5BS",
+    "risk_level": "medium",
+    "risk_score": 0.58
+  },
+  {
+    "id": "flood102",
+    "text": "Low flood risk area with improved drainage systems and minimal exposure to nearby waterways.",
+    "location": "Manchester",
+    "postcode": "M20 2DW",
+    "risk_level": "low",
+    "risk_score": 0.18
+  },
+  {
+    "id": "flood103",
+    "text": "High flood risk zone due to frequent surface water accumulation and poor runoff during storms.",
+    "location": "Manchester",
+    "postcode": "M15 4FN",
+    "risk_level": "high",
+    "risk_score": 0.81
+  }
+]
