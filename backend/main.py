@@ -6,12 +6,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from langchain_community.chat_models import ChatOpenAI
-from langchain.schema import HumanMessage
+from langchain_core.messages import HumanMessage
 
 # Uncomment for RAG
-# from langchain.vectorstores import Chroma
-# from langchain.embeddings.openai import OpenAIEmbeddings
-# from langchain.chains import RetrievalQA
+from langchain.vectorstores import Chroma
+from langchain_openai import OpenAIEmbeddings
+from langchain.chains import RetrievalQA
 
 import asyncio
 import json
@@ -46,46 +46,26 @@ else:
     llm = None
 
 # Uncomment for RAG
-# embedding = OpenAIEmbeddings()
-# vectordb = Chroma(persist_directory="db", embedding_function=embedding)
-# retriever = vectordb.as_retriever(search_kwargs={"k": 3})
-# qa_chain = RetrievalQA.from_chain_type(llm, retriever=retriever, return_source_documents=True)
+embedding = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
+vectordb = Chroma(persist_directory="db", embedding_function=embedding)
+retriever = vectordb.as_retriever(search_kwargs={"k": 3})
+qa_chain = RetrievalQA.from_chain_type(llm, retriever=retriever, return_source_documents=True)
 
 class Query(BaseModel):
     question: str
-
-#@app.post("/query")
-#async def query_endpoint(query: Query):
-#    async def event_stream():
-#        # Without RAG: simple LLM response
-#        messages = [HumanMessage(content=query.question)]
-#        response = llm.stream(messages)
-#        
-#        async for chunk in response:
-#            yield f"data:{json.dumps({'text': chunk.delta})}\n\n"
-#            await asyncio.sleep(0)  # yield control#
-
-        # Uncomment for RAG:
-        # result = qa_chain(query.question)
-        # yield f"data:{json.dumps({'text': result['result']})}\n\n"
-
-#    return StreamingResponse(event_stream(), media_type="text/event-stream")
 
 @app.post("/query")
 async def query_endpoint(request: Query):
     question = request.question
 
     if llm:
-        # Call LLM
-        messages = [HumanMessage(content=question)]
-        # For static/simple call, use generate() or call() instead of streaming
         try:
-            response = llm(messages)  # returns a message object
-            answer = response.content
+            # Use RAG
+            result = qa_chain.run(question)
+            answer = result
         except Exception as e:
             answer = f"Error: {str(e)}"
     else:
-        # Fallback if LLM not available
         answer = "Cheese"
 
     return JSONResponse(content={"text": answer})
