@@ -56,8 +56,13 @@ retriever = vectordb.as_retriever(search_kwargs={"k": 3})
 # New Retrieval Chain (LCEL)
 # ---------------------------------------
 prompt = ChatPromptTemplate.from_template("""
+You are a sustainability expert at a multinational corportation with strong evironmental values. 
+Use the following context to answer the question at the end.
+
 Use ONLY the following context to answer the question.
 If the answer is not in the context, say "I don't know".
+
+Your answer must be consise not exceeding 100 words.
 
 Context:
 {context}
