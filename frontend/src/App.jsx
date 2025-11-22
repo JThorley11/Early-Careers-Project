@@ -92,8 +92,9 @@ export default function Home() {
         </div>
         
         {summary && (
-          <div className="mb-4 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg text-gray-800 dark:text-gray-200">
-            <strong>Summary:</strong> {summary}
+          <div className="mb-2 p-4 border-gray-200 dark:border-zinc-700 rounded-lg hover:shadow-lg transition-shadow bg-white dark:bg-zinc-900 text-center">
+            <h2 className="text-xl font-semibold mb-2 text-black dark:text-zinc-50">Summary</h2>
+            <p className="text-gray-800 dark:text-gray-200">{summary}</p>
           </div>
         )}
 
@@ -182,6 +183,9 @@ export default function Home() {
           <p className="text-sm text-zinc-600">
             The word rhiza comes from the Greek word <em>rhíza</em> (ῥίζα),
             which means &ldquo;root&rdquo;.
+          </p>
+          <p className="text-xs text-zinc-600">
+            A Team Green Spark   Product
           </p>
         </footer>
       </main>
