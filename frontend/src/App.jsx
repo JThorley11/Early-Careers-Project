@@ -1,6 +1,4 @@
 import { useState } from "react";
-import RootLayout from "./layout"; // adjust the path if necessary
-import { HelmetProvider } from "react-helmet-async";
 
 
 export default function Home() {
