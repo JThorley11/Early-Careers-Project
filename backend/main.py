@@ -18,6 +18,15 @@ from langchain_openai import OpenAIEmbeddings
 import asyncio
 import json
 import re
+import math
+
+def cosine_similarity(vec1, vec2):
+    dot = sum(x*y for x, y in zip(vec1, vec2))
+    norm1 = math.sqrt(sum(x*x for x in vec1))
+    norm2 = math.sqrt(sum(y*y for y in vec2))
+    if norm1 == 0 or norm2 == 0:
+        return 0.0
+    return dot / (norm1 * norm2)
 
 def parse_page_content(page_content):
     # Default values
@@ -126,12 +135,17 @@ async def query_endpoint(request: Query):
     # Retrieve relevant documents
     docs = retriever.invoke(query)
 
+    query_vector = embedding.embed_query(query)
     # Convert to SearchResult list
     results = []
     for doc in docs:
         description, currentIssues, suitableSolutions, tags = parse_page_content(doc.page_content)
         meta = doc.metadata or {}
-
+        
+        # Compute relevance score
+        doc_vector = embedding.embed_query(doc.page_content)  # or doc.embedding if stored
+        relevance_score = cosine_similarity(query_vector, doc_vector)
+        
         results.append(SearchResult(
             id=str(meta.get("id", "")),
             name=meta.get("name", ""),
@@ -142,10 +156,11 @@ async def query_endpoint(request: Query):
             priority=str(meta.get("priority", "low")),
             area=float(meta.get("area", 0)),
             tags=tags,
-            relevanceScore=float(meta.get("relevanceScore", 0)),
-            matchedTerms=[]
+            relevanceScore=relevance_score,
+            matchedTerms=[],
         ))
 
+    results.sort(key=lambda r: r.relevanceScore, reverse=True)
     # Generate summary using context
     context_text = "\n".join([doc.page_content for doc in docs])
     try:

@@ -165,11 +165,10 @@ export default function Home() {
                     </div>
                   </div>
 
-                  {result.matchedTerms && result.matchedTerms.length > 0 && (
+                  {result.relevanceScore && (
                     <div className="mt-3 pt-3 border-t border-gray-200 dark:border-zinc-700">
                       <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                        Matched terms: {result.matchedTerms.join(", ")} •
-                        Relevance score: {result.relevanceScore}
+                        Relevance score: {(result.relevanceScore * 100).toFixed(1)}%
                       </p>
                     </div>
                   )}
