@@ -1,26 +1,35 @@
 [
   {
     "id": "flood101",
-    "text": "This area has a medium flood risk due to proximity to the River Irwell and historically high water levels during heavy rainfall.",
-    "location": "Manchester",
-    "postcode": "M3 5BS",
-    "risk_level": "medium",
-    "risk_score": 0.58
+    "name": "River Irwell Floodplain Zone",
+    "location": "Manchester, M3 5BS",
+    "description": "This area has a medium flood risk due to proximity to the River Irwell and historically high water levels during heavy rainfall.",
+    "currentIssues": [ "Surface water flooding", "River level surges during storms" ],
+    "suitableSolutions": [ "Enhanced river monitoring", "Improved drainage channels", "Localised flood barriers" ],
+    "priority": "medium",
+    "area": 540,
+    "tags": [ "river-irwell", "medium-risk", "residential", "commercial" ]
   },
   {
     "id": "flood102",
-    "text": "Low flood risk area with improved drainage systems and minimal exposure to nearby waterways.",
-    "location": "Manchester",
-    "postcode": "M20 2DW",
-    "risk_level": "low",
-    "risk_score": 0.18
+    "name": "South Manchester Low-Risk Zone",
+    "location": "Manchester, M20 2DW",
+    "description": "Low flood risk area with improved drainage systems and minimal exposure to nearby waterways.",
+    "currentIssues": [ "Occasional minor ponding after prolonged rain" ],
+    "suitableSolutions": [ "Routine drainage inspections", "Vegetation maintenance near drains" ],
+    "priority": "low",
+    "area": 320,
+    "tags": [ "low-risk", "suburban", "drainage-improved"]
   },
   {
     "id": "flood103",
-    "text": "High flood risk zone due to frequent surface water accumulation and poor runoff during storms.",
-    "location": "Manchester",
-    "postcode": "M15 4FN",
-    "risk_level": "high",
-    "risk_score": 0.81
+    "name": "Manchester Central Surface Water Zone",
+    "location": "Manchester, M15 4FN",
+    "description": "High flood risk zone due to frequent surface water accumulation and poor runoff during storms.",
+    "currentIssues": [ "Significant surface water flooding", "Insufficient drainage capacity", "Overflow during intense rainfall" ],
+    "suitableSolutions": ["Sustainable drainage systems (SuDS)", "Pump stations", "Enhanced runoff pathways", "Expanded drain capacity" ],
+    "priority": "high",
+    "area": 610,
+    "tags": [ "high-risk", "surface-water", "urban", "stormwater" ]
   }
 ]

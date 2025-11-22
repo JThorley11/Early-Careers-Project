@@ -1,0 +1,112 @@
+[    
+    {
+        "id": 1,
+        "name": "Hyde Park Corner",
+        "location": "Westminster, London",
+        "description": "A neglected corner of the park with eroded soil and minimal vegetation coverage. Heavy foot traffic has created bare patches.",
+        "currentIssues": ["soil erosion", "bare patches", "heavy foot traffic", "lack of vegetation"],
+        "suitableSolutions": ["rain gardens", "permeable paving", "native plantings", "bioswales"],
+        "priority": "high",
+        "area": 450,
+        "tags": ["erosion", "high-traffic", "restoration", "park", "soil degradation"]
+    },
+    {
+        "id": 2,
+        "name": "Thames Riverside Industrial District",
+        "location": "Southwark, London",
+        "description": "Former industrial area along the Thames with contaminated soil and no green infrastructure.",
+        "currentIssues": ["contaminated soil", "flooding", "heat island effect", "air pollution"],
+        "suitableSolutions": ["green roofs", "phytoremediation", "urban forest", "constructed wetlands"],
+        "priority": "high",
+        "area": 12000,
+        "tags": ["industrial", "waterfront", "contamination", "flooding", "brownfield"]
+    },
+    {
+        "id": 3,
+        "name": "Oxford Street Commercial District",
+        "location": "Westminster, London",
+        "description": "Commercial area with concrete surfaces and minimal shade, experiencing urban heat island effects.",
+        "currentIssues": ["heat island", "stormwater runoff", "lack of shade", "air quality"],
+        "suitableSolutions": ["street trees", "green corridors", "permeable paving", "vertical gardens"],
+        "priority": "medium",
+        "area": 3200,
+        "tags": ["commercial", "heat", "stormwater", "shade", "pedestrian"]
+    },
+    {
+        "id": 4,
+        "name": "Tower Hamlets Residential Estate",
+        "location": "Tower Hamlets, London",
+        "description": "Dense residential area with limited green space and poor stormwater management.",
+        "currentIssues": ["stormwater flooding", "limited green space", "community health"],
+        "suitableSolutions": ["community gardens", "rain gardens", "green alleys", "pocket parks"],
+        "priority": "medium",
+        "area": 2800,
+        "tags": ["residential", "flooding", "community", "green space", "health"]
+    },
+    {
+        "id": 5,
+        "name": "A40 Westway Underpass",
+        "location": "Hammersmith, London",
+        "description": "Underutilized space beneath motorway overpass with noise pollution and poor air quality.",
+        "currentIssues": ["noise pollution", "air pollution", "underutilized space", "lack of vegetation"],
+        "suitableSolutions": ["urban forest buffer", "noise barriers with vegetation", "air filtering plants"],
+        "priority": "low",
+        "area": 1500,
+        "tags": ["highway", "noise", "air-quality", "underutilized", "buffer"]
+    },
+    {
+        "id": 6,
+        "name": "Thames Barrier Park Waterfront",
+        "location": "Newham, London",
+        "description": "Riverside area vulnerable to tidal flooding and rising river levels, with aging infrastructure.",
+        "currentIssues": ["tidal flooding", "storm surge", "river level rise", "aging infrastructure"],
+        "suitableSolutions": ["living shorelines", "riparian wetlands", "bioswales", "elevated greenways"],
+        "priority": "high",
+        "area": 8500,
+        "tags": ["coastal", "flooding", "climate-resilience", "waterfront", "infrastructure"]
+    },
+    {
+        "id": 7,
+        "name": "UCL Bloomsbury Campus Quad",
+        "location": "Camden, London",
+        "description": "Large open lawn area with compacted soil and limited biodiversity.",
+        "currentIssues": ["soil compaction", "low biodiversity", "water runoff", "monoculture grass"],
+        "suitableSolutions": ["native meadow", "pollinator gardens", "bioretention areas", "diverse plantings"],
+        "priority": "low",
+        "area": 5000,
+        "tags": ["campus", "biodiversity", "education", "soil-health", "pollinators"]
+    },
+    {
+        "id": 8,
+        "name": "Canary Wharf Car Park",
+        "location": "Tower Hamlets, London",
+        "description": "Large asphalt car park creating heat island effect and contributing to stormwater issues.",
+        "currentIssues": ["heat island", "stormwater runoff", "impervious surface", "air quality"],
+        "suitableSolutions": ["permeable parking surfaces", "bioswales", "shade trees", "rain gardens"],
+        "priority": "medium",
+        "area": 4200,
+        "tags": ["parking", "heat", "stormwater", "impervious", "retrofit"]
+    },
+    {
+        "id": 9,
+        "name": "Hackney Primary School Playground",
+        "location": "Hackney, London",
+        "description": "Asphalt playground with no shade or green elements, affecting children's health and comfort.",
+        "currentIssues": ["heat exposure", "lack of shade", "no green space", "runoff"],
+        "suitableSolutions": ["shade trees", "green play spaces", "rain gardens", "outdoor classrooms"],
+        "priority": "high",
+        "area": 1800,
+        "tags": ["school", "children", "health", "education", "shade", "play"]
+    },
+    {
+        "id": 10,
+        "name": "River Wandle Restoration Site",
+        "location": "Wandsworth, London",
+        "description": "Degraded urban river with channelized flow and invasive species dominating the banks.",
+        "currentIssues": ["stream degradation", "invasive species", "flooding", "habitat loss"],
+        "suitableSolutions": ["stream restoration", "native riparian buffer", "bioengineering", "wetland creation"],
+        "priority": "medium",
+        "area": 6700,
+        "tags": ["creek", "restoration", "habitat", "water-quality", "riparian"]
+    }
+]

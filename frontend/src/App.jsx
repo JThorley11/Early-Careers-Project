@@ -1,152 +1,195 @@
-import { useState, useRef } from "react";
-import Banner from "./components/Banner";
+import { useState } from "react";
+import RootLayout from "./layout"; // adjust the path if necessary
+import { HelmetProvider } from "react-helmet-async";
 
-function App() {
-  const [question, setQuestion] = useState("");
-  const [chat, setChat] = useState([]);
-  const [showFilters, setShowFilters] = useState(true);
-  const [filters, setFilters] = useState({
-    category: "",
-    startDate: "",
-    endDate: "",
-  });
 
-  const chatRef = useRef(null);
+export default function Home() {
+  const [query, setQuery] = useState("");
+  const [results, setResults] = useState([]);
+  const [summary, setSummary] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!question.trim()) return;
+  async function handleSearch() {
+    if (!query.trim()) {
+      setError("Please enter a search query");
+      return;
+    }
 
-    const userMessage = { sender: "user", text: question };
-    setChat((prev) => [...prev, userMessage]);
-    setQuestion("");
-
-    const botMessage = { sender: "bot", text: "" };
-    setChat((prev) => [...prev, botMessage]);
+    setLoading(true);
+    setError(null);
 
     try {
-      const res = await fetch("http://localhost:8000/query", {
+      const response = await fetch("http://localhost:8000/query", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          question,
-          filters, // ⬅️ SEND FILTERS TO BACKEND
-        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ query }),
       });
 
-      const data = await res.json();
+      if (!response.ok) {
+        throw new Error("Search failed");
+      }
 
-      setChat((prev) => {
-        const updated = [...prev];
-        updated[updated.length - 1].text = data.text;
-        return updated;
-      });
+      const data = await response.json();
+      setSummary(data.summary || "");
+      setResults(data.results || []);
     } catch (err) {
-      console.error(err);
+      setError("An error occurred while searching. Please try again.");
+      console.error("Search error:", err);
+    } finally {
+      setLoading(false);
     }
+  }
 
-    if (chatRef.current) {
-      chatRef.current.scrollTop = chatRef.current.scrollHeight;
+  function handleKeyPress(e) {
+    if (e.key === "Enter") {
+      handleSearch();
     }
-  };
+  }
 
   return (
-    <>
-      <Banner />
-
-      <div className="max-w-5xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 min-h-[80vh]">
-
-        {/* ---------- LEFT FILTER FORM ---------- */}
-        <div className="p-4 border rounded-lg shadow h-fit">
-
-        {/* Header */}
-        <button
-          className="w-full flex justify-between items-center font-bold text-lg mb-2"
-          onClick={() => setShowFilters(!showFilters)}
-        >
-          Filters
-          <span className="text-xl">{showFilters ? "−" : "+"}</span>
-        </button>
-
-        {/* Collapsible content */}
-        {showFilters && (
-          <div className="flex flex-col gap-3 mt-2">
-
-            <select
-              value={filters.category}
-              onChange={(e) =>
-                setFilters({ ...filters, category: e.target.value })
-              }
-              className="p-2 border rounded"
-            >
-              <option value="">All Categories</option>
-              <option value="gi">GI</option>
-              <option value="iwr">IWR</option>
-              <option value="c&m">C&M</option>
-            </select>
-
-            <input
-              type="date"
-              value={filters.startDate}
-              onChange={(e) =>
-                setFilters({ ...filters, startDate: e.target.value })
-              }
-              className="p-2 border rounded"
-            />
-
-            <input
-              type="date"
-              value={filters.endDate}
-              onChange={(e) =>
-                setFilters({ ...filters, endDate: e.target.value })
-              }
-              className="p-2 border rounded"
-            />
-
-          </div>
-        )}
-      </div>
-
-        {/* ---------- RIGHT CHAT BOX ---------- */}
-        <div className="md:col-span-2 p-4 border rounded-lg shadow flex flex-col">
-
-          {/* Chat messages */}
-          <div className="flex-1 mb-4 space-y-2 overflow-y-auto" ref={chatRef}>
-            {chat.map((msg, idx) => (
-              <div
-                key={idx}
-                className={msg.sender === "user" ? "text-right" : "text-left"}
-              >
-                <span
-                  className={`inline-block p-2 rounded-lg ${
-                    msg.sender === "user"
-                      ? "bg-blue-500 text-white"
-                      : "bg-gray-200 text-black"
-                  }`}
-                >
-                  {msg.text}
-                </span>
+    <HelmetProvider>
+      <RootLayout>
+        <div className="flex min-h-screen items-center justify-center font-sans bg-[#FFD902] text-[#171717]">
+          <main className="flex min-h-screen w-full max-w-3xl flex-col items-start gap-8 py-12 px-8">
+            <div className="flex items-center gap-4">
+              <img
+                src="/plant-bot-yellow.png"
+                alt="RhizAgain logo"
+                className="w-36 h-36"
+              />
+              <div>
+                <h1 className="text-3xl font-semibold tracking-tight">RhizAgain</h1>
+                <p className="text-lg text-black">
+                  Get to the root of urban nature challenges with AI insights.
+                </p>
               </div>
-            ))}
-          </div>
+            </div>
 
-          {/* Input bar */}
-          <form onSubmit={handleSubmit} className="flex gap-2">
-            <input
-              value={question}
-              onChange={(e) => setQuestion(e.target.value)}
-              className="flex-1 p-2 border rounded"
-              placeholder="Ask me anything..."
-            />
-            <button type="submit" className="bg-blue-500 text-white p-2 rounded">
-              Send
-            </button>
-          </form>
+            <div className="w-full">
+              <div className="flex gap-2">
+                <input
+                  placeholder="Type your question here... (e.g., 'flooding solutions' or 'heat island')"
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  onKeyDown={handleKeyPress}
+                  className="flex-1 rounded-lg border border-black p-3 text-black bg-white focus:outline-none focus:ring-2 focus:ring-green-500"
+                />
+                <button
+                  className="flex h-12 items-center justify-center gap-2 rounded-lg bg-[#191D64] px-6 text-white transition-colors hover:bg-[#0f1340] disabled:bg-gray-400 disabled:cursor-not-allowed"
+                  onClick={handleSearch}
+                  disabled={loading}
+                >
+                  {loading ? "Searching..." : "Search"}
+                </button>
+              </div>
 
+              {error && (
+                <div className="mt-4 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
+                  <p className="text-red-800 dark:text-red-200">{error}</p>
+                </div>
+              )}
+            </div>
+            
+            {summary && (
+              <div className="mb-4 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg text-gray-800 dark:text-gray-200">
+                <strong>Summary:</strong> {summary}
+              </div>
+            )}
+    
+            {results.length > 0 && (
+              <div className="w-full">
+                <h2 className="text-2xl font-semibold mb-4 text-black dark:text-zinc-50">
+                  Search Results ({results.length})
+                </h2>
+                <div className="space-y-4">
+                  {results.map((result) => (
+                    <div
+                      key={result.id}
+                      className="p-6 border border-gray-200 dark:border-zinc-700 rounded-lg hover:shadow-lg transition-shadow bg-white dark:bg-zinc-900"
+                    >
+                      <div className="flex justify-between items-start mb-3">
+                        <h3 className="text-xl font-semibold text-black dark:text-zinc-50">
+                          {result.name}
+                        </h3>
+                        <span
+                          className={`px-3 py-1 rounded-full text-xs font-medium ${
+                            result.priority === "high"
+                              ? "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-200"
+                              : result.priority === "medium"
+                              ? "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-200"
+                              : "bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-200"
+                          }`}
+                        >
+                          {result.priority.toUpperCase()} PRIORITY
+                        </span>
+                      </div>
+
+                      <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-2">
+                        📍 {result.location} • {result.area.toLocaleString()} m²
+                      </p>
+
+                      <p className="text-zinc-700 dark:text-zinc-300 mb-4">
+                        {result.description}
+                      </p>
+
+                      <div className="mb-3">
+                        <h4 className="text-sm font-semibold text-zinc-800 dark:text-zinc-200 mb-2">
+                          Current Issues:
+                        </h4>
+                        <div className="flex flex-wrap gap-2">
+                          {result.currentIssues.map((issue, idx) => (
+                            <span
+                              key={idx}
+                              className="px-2 py-1 bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300 text-xs rounded"
+                            >
+                              {issue}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div className="mb-3">
+                        <h4 className="text-sm font-semibold text-zinc-800 dark:text-zinc-200 mb-2">
+                          Suitable Solutions:
+                        </h4>
+                        <div className="flex flex-wrap gap-2">
+                          {result.suitableSolutions.map((solution, idx) => (
+                            <span
+                              key={idx}
+                              className="px-2 py-1 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300 text-xs rounded"
+                            >
+                              {solution}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+
+                      {result.matchedTerms && result.matchedTerms.length > 0 && (
+                        <div className="mt-3 pt-3 border-t border-gray-200 dark:border-zinc-700">
+                          <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                            Matched terms: {result.matchedTerms.join(", ")} •
+                            Relevance score: {result.relevanceScore}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <footer className="w-full mt-auto pt-8 pb-4 text-center border-t border-black-300">
+              <p className="text-sm text-zinc-600">
+                The word rhiza comes from the Greek word <em>rhíza</em> (ῥίζα),
+                which means &ldquo;root&rdquo;.
+              </p>
+            </footer>
+          </main>
         </div>
-      </div>
-    </>
+      </RootLayout>
+    </HelmetProvider>
   );
 }
-
-export default App;

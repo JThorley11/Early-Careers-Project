@@ -1,26 +1,35 @@
 [
   {
     "id": "flood001",
-    "text": "This area has a medium flood risk due to proximity to River Brent and poor drainage.",
-    "location": "London",
-    "postcode": "NW10 3DN",
-    "risk_level": "medium",
-    "risk_score": 0.62
+    "name": "Brent Reservoir Area",
+    "location": "Brent, London",
+    "description": "This area has a medium flood risk due to proximity to River Brent and poor drainage.",
+    "currentIssues": [ "Surface water flooding", "River flooding" ],
+    "suitableSolutions": [ "Improved drainage systems", "Flood barriers" ],
+    "priority": "medium",
+    "area": 500,
+    "tags": [ "reservior", "urban", "residential", "business-park" ]
   },
   {
     "id": "flood002",
-    "text": "Low flood risk area with effective flood defenses in place along the Thames.",
-    "location": "London",
-    "postcode": "SE1 7PB",
-    "risk_level": "low",
-    "risk_score": 0.15
+    "name": "Thames South Bank Flood Zone",
+    "location": "London, SE1 7PB",
+    "description": "Low flood risk area with effective flood defenses in place along the Thames.",
+    "currentIssues": [ "Minor surface water accumulation in heavy rain" ],
+    "suitableSolutions": [ "Routine maintenance of flood defenses", "Improved surface water drainage" ],
+    "priority": "low",
+    "area": 350,
+    "tags": [ "thames", "urban", "low-risk", "tourist-area" ]
   },
   {
     "id": "flood003",
-    "text": "High flood risk zone due to historical flooding events and low elevation.",
-    "location": "London",
-    "postcode": "E1 6AN",
-    "risk_level": "high",
-    "risk_score": 0.85
+    "name": "East London Low-Elevation Flood Zone",
+    "location": "London, E1 6AN",
+    "description": "High flood risk zone due to historical flooding events and low elevation.",
+    "currentIssues": [ "High surface water flooding", "Poor drainage", "Risk from tidal surges" ],
+    "suitableSolutions": [ "Flood barriers", "Pump stations", "Riverbank reinforcement", "Sustainable drainage systems (SuDS)" ],
+    "priority": "high",
+    "area": 620,
+    "tags": [ "high-risk", "low-elevation", "residential", "historical-flooding" ]
   }
 ]
