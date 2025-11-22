@@ -75,10 +75,9 @@ retriever = vectordb.as_retriever(search_kwargs={"k": 3})
 # ---------------------------------------
 prompt = PromptTemplate.from_template("""
 You are a sustainability expert at a multinational corportation with strong evironmental values. 
-Summarise the following context to answer the prompt consisely, the context will be passed after you summary.
-
-Use ONLY the following context to complete the summary.
-
+You have access to the knowledge provided below that has been retrieved from internal documents to answer user prompts.
+Please explain breifly why each document is relevant to the user's query in the summary. And why they are ordered that way.
+Summarise the following context to answer the prompt consisely.
 Your answer must be consise not exceeding 100 words.
 
 Context:
@@ -126,7 +125,6 @@ async def query_endpoint(request: Query):
 
     # Retrieve relevant documents
     docs = retriever.invoke(query)
-    print(docs)
 
     # Convert to SearchResult list
     results = []
