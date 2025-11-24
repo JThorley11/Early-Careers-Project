@@ -49,7 +49,7 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen items-center justify-center font-sans bg-[#FFD902] text-[#171717]">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-start gap-8 py-12 px-8">
+      <main className="flex min-h-screen w-full max-w-3xl flex-col items-centre gap-8 py-12 px-8">
         <div className="flex items-center gap-4">
           <img
             src="/plant-bot-yellow.png"
@@ -107,7 +107,7 @@ export default function Home() {
                   key={result.id}
                   className="p-6 border border-gray-200 dark:border-zinc-700 rounded-lg hover:shadow-lg transition-shadow bg-white dark:bg-zinc-900"
                 >
-                  <div className="flex justify-between items-start mb-3">
+                  <div className="flex justify-between items-centre mb-3">
                     <h3 className="text-xl font-semibold text-black dark:text-zinc-50">
                       {result.name}
                     </h3>

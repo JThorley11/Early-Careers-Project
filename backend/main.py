@@ -7,17 +7,12 @@ from pydantic import BaseModel
 from typing import List, Literal
 
 from langchain_community.chat_models import ChatOpenAI
-from langchain_core.messages import HumanMessage
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
 # RAG
 from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings
-
-import asyncio
-import json
-import re
 import math
 
 def cosine_similarity(vec1, vec2):
@@ -77,7 +72,7 @@ else:
 # ---------------------------------------
 embedding = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
 vectordb = Chroma(persist_directory="db", embedding_function=embedding)
-retriever = vectordb.as_retriever(search_kwargs={"k": 3})
+retriever = vectordb.as_retriever(search_kwargs={"k": 5})
 
 # ---------------------------------------
 # New Retrieval Chain (LCEL)
@@ -135,17 +130,26 @@ async def query_endpoint(request: Query):
     # Retrieve relevant documents
     docs = retriever.invoke(query)
 
+    # Compute query embedding
     query_vector = embedding.embed_query(query)
-    # Convert to SearchResult list
+
     results = []
+    filtered_docs = []  # we need this to generate a correct summary
+
     for doc in docs:
         description, currentIssues, suitableSolutions, tags = parse_page_content(doc.page_content)
         meta = doc.metadata or {}
-        
+
         # Compute relevance score
-        doc_vector = embedding.embed_query(doc.page_content)  # or doc.embedding if stored
+        doc_vector = embedding.embed_query(doc.page_content)
         relevance_score = cosine_similarity(query_vector, doc_vector)
-        
+
+        # Only include if cosine similarity >= 0.8
+        if relevance_score < 0.8:
+            continue  # skip weak matches
+
+        filtered_docs.append(doc)
+
         results.append(SearchResult(
             id=str(meta.get("id", "")),
             name=meta.get("name", ""),
@@ -157,18 +161,24 @@ async def query_endpoint(request: Query):
             area=float(meta.get("area", 0)),
             tags=tags,
             relevanceScore=relevance_score,
-            matchedTerms=[],
+            matchedTerms=[]
         ))
 
+    # Sort strong results
     results.sort(key=lambda r: r.relevanceScore, reverse=True)
-    # Generate summary using context
-    context_text = "\n".join([doc.page_content for doc in docs])
+
+    # If nothing passes the threshold
+    if not results:
+        return SearchResponse(
+            summary="No highly relevant documents found.",
+            results=[]
+        )
+
+    # Generate summary ONLY from filtered docs
+    context_text = "\n".join([doc.page_content for doc in filtered_docs])
     try:
         summary = summary_chain.invoke({"context": context_text, "prompt": query})
     except Exception as e:
         summary = f"Error generating summary: {str(e)}"
-    if not docs:
-        summary = "No relevant documents found."
 
-    # Return everything together
     return SearchResponse(summary=summary, results=results)
