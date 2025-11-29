@@ -28,7 +28,7 @@ cd backend
 poetry install
 ```
 
-### Step 3: Create a .env file wiht your OpenAI API key:
+### Step 3: Create a .env file with your OpenAI API key:
 ```bash
 OPENAI_API_KEY=your_api_key_here
 ```
@@ -54,6 +54,22 @@ npm install
 ```bash 
 npm start
 ```
+
+
+# Create the vector database
+
+### Step 1: Enter the backend
+```bash
+# Backend
+cd backend
+```
+
+### Step 2: Create the database (ensure one does not already exist)
+```bash
+poetry run python build_chromadb.py
+```
+
+
 
 # Project Structure:
 
