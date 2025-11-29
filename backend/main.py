@@ -12,7 +12,7 @@ from langchain_core.output_parsers import StrOutputParser
 
 # RAG
 from langchain_community.vectorstores import Chroma
-from langchain_openai import OpenAIEmbeddings
+from langchain_community.embeddings import OllamaEmbeddings
 import math
 
 def cosine_similarity(vec1, vec2):
@@ -43,10 +43,6 @@ def parse_page_content(page_content):
 
     return description, currentIssues, suitableSolutions, tags
 
-load_dotenv()
-
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-
 app = FastAPI()
 
 app.add_middleware(
@@ -56,21 +52,22 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-if OPENAI_API_KEY is not None:
-    llm = ChatOpenAI(
-        model_name="gpt-4.1-nano",
-        temperature=0.0,
-        streaming=False,
-        verbose=True,
-        openai_api_key=OPENAI_API_KEY,
-    )
-else:
-    llm = None
+llm = ChatOpenAI(
+    model_name="llama3.2",
+    temperature=0.0,
+    base_url="http://localhost:11434/v1",
+    streaming=False,
+    verbose=True,
+    openai_api_key="unused-key",
+)
 
 # ---------------------------------------
 # RAG: Embeddings + VectorDB
 # ---------------------------------------
-embedding = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
+embedding = OllamaEmbeddings(
+    model="all-minilm",
+    base_url="http://localhost:11434"
+)
 vectordb = Chroma(persist_directory="db", embedding_function=embedding)
 retriever = vectordb.as_retriever(search_kwargs={"k": 5})
 
@@ -124,9 +121,6 @@ class SearchResponse(BaseModel):
 async def query_endpoint(request: Query):
     query = request.query
 
-    if not llm:
-        return JSONResponse(content={"summary": "Cheese", "results": []})
-
     # Retrieve relevant documents
     docs = retriever.invoke(query)
 
@@ -145,8 +139,8 @@ async def query_endpoint(request: Query):
         relevance_score = cosine_similarity(query_vector, doc_vector)
 
         # Only include if cosine similarity >= 0.8
-        if relevance_score < 0.8:
-            continue  # skip weak matches
+        #if relevance_score < 0.8:
+        #    continue  # skip weak matches
 
         filtered_docs.append(doc)
 
