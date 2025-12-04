@@ -80,6 +80,9 @@ You have access to the knowledge provided below that has been retrieved from int
 Please explain breifly why each document is relevant to the user's query in the summary. And why they are ordered that way.
 Summarise the following context to answer the prompt consisely.
 Your answer must be consise not exceeding 100 words.
+Do not use any information that is not in the context.
+Please start immediately with the answer do not preamble at all.
+Do not list document names.
 
 Context:
 {context}
