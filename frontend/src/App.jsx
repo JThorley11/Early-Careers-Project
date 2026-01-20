@@ -79,11 +79,11 @@ export default function Home() {
   }
 
   return (
-    <div className="relative min-h-screen font-sans bg-[#FFD902] text-[#171717] flex flex-col items-center justify-center w-full">
+    <div className="relative min-h-screen font-sans bg-[#E6F2EA] text-[#1F2937] flex flex-col items-center justify-center w-full">
       {/* Sidebar overlay */}
       <motion.div
         animate={{ width: sidebarOpen ? 256 : 0 }}
-        className="fixed top-0 left-0 h-full flex flex-col bg-white border-r border-gray-200 overflow-hidden z-50"
+        className="fixed top-0 left-0 h-full flex flex-col bg-[#f2f2e6] border-r border-gray-200 overflow-hidden z-50"
         transition={{ type: "spring", stiffness: 200, damping: 25 }}
       >
         {sidebarOpen && (
@@ -93,10 +93,12 @@ export default function Home() {
               {chats.map((chat, idx) => (
                 <li
                   key={idx}
-                  className="p-2 rounded hover:bg-gray-100 cursor-pointer"
+                  className="p-2 rounded hover:bg-[#eeeed2] cursor-pointer"
                   onClick={() => {
                     setSummary(chat.summary);
                     setResults(chat.results);
+                    setQuery("");
+                    setError(null);
                   }}
                 >
                   {chat.title}
@@ -129,11 +131,11 @@ export default function Home() {
       <main className="flex-1 flex flex-col items-center py-12 px-8 gap-8 w-full">
         {/* Logo + Header */}
         <div className="flex items-center gap-4">
-          <img src="/plant-bot-yellow.png" alt="RhizAgain logo" className="w-36 h-36" />
+          <img src="/plant-bot-removebg.png" alt="RhizAgain logo" className="w-36 h-36" />
           <div>
-            <h1 className="text-3xl font-semibold tracking-tight">RhizAgain</h1>
+            <h1 className="text-3xl font-semibold tracking-tight">GreenIQ</h1>
             <p className="text-lg text-black">
-              Get to the root of urban nature challenges with AI insights.
+              Harvest insights, grow sustainable impact.
             </p>
           </div>
         </div>
@@ -146,11 +148,11 @@ export default function Home() {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={handleKeyPress}
-                className="flex-1 rounded-lg border border-black p-3 text-black bg-white focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="flex-1 rounded-lg border border-black p-3 text-black bg-[#F9FAF8] focus:outline-none focus:ring-2 focus:ring-green-500"
               />
               
               <button
-                className="flex h-12 items-center justify-center gap-2 rounded-lg bg-[#191D64] px-6 text-white transition-colors hover:bg-[#0f1340] disabled:bg-gray-400 disabled:cursor-not-allowed"
+                className="flex h-12 items-center justify-center gap-2 rounded-lg bg-[#2F855A] px-6 text-[#F9FAF8] transition-colors hover:bg-[#276749] disabled:bg-gray-400 disabled:cursor-not-allowed"
                 onClick={handleSearch}
                 disabled={loading}
               >
@@ -158,7 +160,7 @@ export default function Home() {
               </button>
 
               <button
-                className="flex h-12 items-center justify-center gap-2 rounded-lg bg-red-700 px-6 text-white transition-colors hover:bg-red-900"
+                className="flex h-12 items-center justify-center gap-2 rounded-lg bg-[#D69E2E] px-6 text-[#F9FAF8] transition-colors hover:bg-[#b67b07]"
                 onClick={handleNewChat}
               >
                 New Chat
@@ -174,7 +176,7 @@ export default function Home() {
 
             {/* Summary */}
             {summary && (
-              <div className="p-4 border-gray-200 rounded-lg hover:shadow-lg transition-shadow bg-white text-center">
+              <div className="p-4 border-gray-200 rounded-lg hover:shadow-lg transition-shadow bg-[#F9FAF8] text-center">
                 <h2 className="text-xl font-semibold mb-2 text-black">Summary</h2>
                 <p className="text-gray-800">{summary}</p>
               </div>
@@ -190,7 +192,7 @@ export default function Home() {
                   {results.map((result) => (
                     <div
                       key={result.id}
-                      className="p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow bg-white"
+                      className="p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow bg-[#F9FAF8]"
                     >
                       <div className="flex justify-between items-center mb-3">
                         <h3 className="text-xl font-semibold text-black">{result.name}</h3>
@@ -255,7 +257,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="mt-auto pt-8 pb-4 text-center border-t border-black-300">
         <p className="text-sm text-zinc-600">
-          The word rhiza comes from the Greek word <em>rhíza</em> (ῥίζα), which means "root".
+          GreenIQ grows insights from past projects into a sustainable future.
         </p>
         <p className="text-xs text-zinc-600">A Team Green Spark Product</p>
       </footer>
