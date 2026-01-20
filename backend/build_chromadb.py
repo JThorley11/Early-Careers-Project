@@ -1,8 +1,9 @@
 import os
 import json
-from langchain_community.embeddings import OllamaEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_core.documents import Document
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_ollama import OllamaEmbeddings
 
 # Directories
 DATA_DIR = "data"
@@ -26,27 +27,22 @@ for root, _, files in os.walk(DATA_DIR):
             with open(path, "r", encoding="utf-8") as f:
                 items = json.load(f)
                 for item in items:
-                    # Build page_content by combining multiple fields
                     page_content = item.get("description", "")
                     page_content += "\nCurrent Issues: " + ", ".join(item.get("currentIssues", []))
                     page_content += "\nSuitable Solutions: " + ", ".join(item.get("suitableSolutions", []))
                     page_content += "\nTags: " + ", ".join(item.get("tags", []))
 
-                    # Build metadata safely (convert lists to strings)
                     metadata = {}
                     for key, value in item.items():
                         if key in ["description", "currentIssues", "suitableSolutions"]:
-                            continue  # Already included in page_content
+                            continue
                         if isinstance(value, list):
                             metadata[key] = ", ".join(map(str, value))
                         else:
                             metadata[key] = value
 
                     documents.append(
-                        Document(
-                            page_content=page_content,
-                            metadata=metadata
-                        )
+                        Document(page_content=page_content, metadata=metadata)
                     )
 
         # Handle text files
@@ -63,15 +59,22 @@ for root, _, files in os.walk(DATA_DIR):
                     )
                 )
 
+# 🔹 Split documents BEFORE embedding
+text_splitter = RecursiveCharacterTextSplitter(
+    chunk_size=500,
+    chunk_overlap=50
+)
+
+split_documents = text_splitter.split_documents(documents)
+
 # Build the ChromaDB
 vectordb = Chroma.from_documents(
-    documents=documents,
+    documents=split_documents,
     embedding=embeddings,
     persist_directory=DB_DIR
 )
 
-# Persist the database
 vectordb.persist()
 
-print(f"Successfully built Chroma DB with {len(documents)} documents!")
+print(f"Successfully built Chroma DB with {len(split_documents)} chunks!")
 print(f"Database stored in: {DB_DIR}/")
