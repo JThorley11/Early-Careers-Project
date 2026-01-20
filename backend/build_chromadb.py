@@ -1,6 +1,7 @@
 import os
 import json
-from langchain_community.embeddings import OllamaEmbeddings
+from dotenv import load_dotenv
+from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_core.documents import Document
 
@@ -8,11 +9,13 @@ from langchain_core.documents import Document
 DATA_DIR = "data"
 DB_DIR = "db"
 
+load_dotenv()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+if not OPENAI_API_KEY:
+    raise ValueError("OPENAI_API_KEY missing from .env")
+
 # Initialize embeddings
-embeddings = OllamaEmbeddings(
-    model="all-minilm",
-    base_url="http://localhost:11434"
-)
+embeddings = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
 
 documents = []
 
