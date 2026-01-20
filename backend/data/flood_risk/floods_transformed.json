@@ -1,0 +1,1233 @@
+[
+  {
+    "id":1652131917,
+    "name":"Upper Bristol Avon area",
+    "location":"Gloucestershire, South Gloucestershire, Wiltshire (Wessex)",
+    "description":"Areas most at risk include low lying areas in Tetbury, Badminton, Brook End at Luckington, Corsham, Lacock and the road at Reybridge. Flooding is forecast to affect locations near the Bristol Avon, Tetbury Avon, Sherston Avon, Dauntsey Brook, with low lying land and roads expected to be most affected. Further rainfall is forecast tomorrow Friday 05\/12\/25 and over the weekend. River levels will remain high over the coming days in response to this forecast rainfall.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"medium",
+    "tags":[
+      "112waftuba",
+      "bristol",
+      "flood alert",
+      "flooding",
+      "fluvial"
+    ]
+  },
+  {
+    "id":3954298333,
+    "name":"River Trent from Cromwell Weir to Gainsborough",
+    "location":"Lincolnshire, Nottinghamshire (East Midlands)",
+    "description":"River levels have fallen at the Torksey gauge but will rise at the next high tide this evening.  Consequently, the risk of flooding of roads and farmland remains.\nAreas most at risk are Church Laneham to Rampton Road. Rainfall is forecast over the next 48 hours. \nRiver levels will rise again after tonights tide from 20:30 on 04\/12\/2025.\nWe are closely monitoring the situation. Avoid using low lying footpaths and any bridges near local watercourses . \n\nThis message will be updated by 17:00PM on 04 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"medium",
+    "tags":[
+      "034wab424",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":2541682791,
+    "name":"River Churn and its tributaries",
+    "location":"Gloucestershire, Wiltshire (Thames)",
+    "description":"High river levels may lead to flooding. \n\nFlooding is possible from the morning of the 04 Dec 2025.\n\nFlooding of low lying land and roads is possible today, along the River Churn around Cerney Wick. The weather forecast is for further rain which could be heavy at times over the next 3 days. We expect river levels to fall slowly.\n\nWe are closely monitoring the situation. Avoid using low lying footpaths and any bridges near local watercourses. Go to River levels online for updates on current river levels.\n\nThis message will be updated by 19:00 04 Dec 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"medium",
+    "tags":[
+      "061waf02churn",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":331449949,
+    "name":"River Evenlode from Moreton in Marsh to Cassington and also the River Glyme at Wootton and Woodstock",
+    "location":"Gloucestershire, Oxfordshire, Warwickshire (Thames)",
+    "description":"There is no longer a threat of flooding, though standing water and debris may still remain. \nFurther rainfall is forecast but no further flooding is expected.  \nWe will continue to monitor the situation and will issue further alerts or warnings if necessary.  \nContinue to take care on waterside roads and footpaths and don't put yourself in unnecessary danger. Stay away from floodwater - it contains hidden dangers such as open manhole covers, sewage and chemicals.   \n\n",
+    "currentIssues":[
+      "heavy rainfall",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"low",
+    "tags":[
+      "061waf12evenlode",
+      "flooding",
+      "fluvial",
+      "river",
+      "warning no longer in force"
+    ]
+  },
+  {
+    "id":2332034065,
+    "name":"River Thames and its small tributaries from Calcutt to Lechlade",
+    "location":"Gloucestershire, Oxfordshire, Swindon, Wiltshire (Thames)",
+    "description":"High river levels may lead to flooding. \n\nFlooding is possible from the morning of the 04 Dec 2025.\n\nFlooding of low lying land and roads is possible today, 04 Dec 2025, along the River Thames, especially in the Kempsford area. This is as a result of rivers responding to recent rainfall. The weather forecast is for further rain which could be heavy at times over the next 3 days. We expect river levels to remain high over the next few days.\n\nWe are closely monitoring the situation.\n\nAvoid using low lying footpaths and any bridges near local watercourses. Go to River levels online for updates on current river levels.\n\nThis message will be updated by 19:00 04 Dec 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"medium",
+    "tags":[
+      "061waf23calclech",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":1918121448,
+    "name":"South East Somerset Rivers, Upper Reaches",
+    "location":"Dorset Council, Somerset (Wessex)",
+    "description":"River levels are still falling very gradually, but remain high at Sherborne Lake, above the Alert level. Further rain overnight tonight into Thursday morning, 04\/12\/2025, will keep this level high and will likely cause other local rivers to rise again, including the River Yeo, River Wriggle and River Cam. Flooding of low-lying land and roads is possible in this area, including around the Sparkford to Weston Bampfylde road and Deep Ford Lane, Chetnole. Therefore the need for this Alert remains. Further heavy rain is expected on Friday 05\/12\/2025 into Saturday. We are closely monitoring the situation, and checking defences, bridges, debris screens and culverts. Take care and avoid walking, cycling or driving through flood water. This message will be updated by 13:00PM on 04\/12\/2025, or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"medium",
+    "tags":[
+      "112waftses",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":3606988999,
+    "name":"Tern and Perry catchments",
+    "location":"Shropshire, Staffordshire, Telford and Wrekin (West Midlands)",
+    "description":"River levels are falling slowly but remain high and the potential for flooding continues today, 4 December 2025. Flooding may affect low lying land and roads adjacent to the river from Wolverley to Newport. Other locations that may be affected include Market Drayton, Wem, and Rodington. We are closely monitoring the situation . Take care and avoid walking, cycling or driving through flood water. This message will be updated by 10:00AM on 5 December 2025 or as the situation changes\n",
+    "currentIssues":[
+      "flooding",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "wetland buffers"
+    ],
+    "priority":"medium",
+    "tags":[
+      "031waf104",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":2366167416,
+    "name":"Lower Frome and tributaries",
+    "location":"Dorset Council (Wessex)",
+    "description":"River levels are rising again at the Stinsford river gauge on the Lower Frome after overnight rainfall. Flooding is forecast to affect low lying areas to start with near to the River Frome in the Dorchester, West Stafford, Bockhampton, Lewell, Tincleton, Pallington, Waddock, Moreton, Wool, East Stoke, Holmebridge, Stoborough, Stoborough Green, Wareham, Redcliffe, Ridge and Swineham areas. We will continue to monitor the forecast and re-issue this Flood Alert if necessary. Please avoid using low lying footpaths and any bridges near local watercourses and do not attempt to walk or drive through flood water. People in this area should take action now and watch your local weather forecast. This message will be updated by 09:00 AM on 5\/12\/2025, or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "low-lying areas",
+      "river level rise"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green corridors",
+      "permeable paving",
+      "rain gardens",
+      "shade trees"
+    ],
+    "priority":"medium",
+    "tags":[
+      "111waffrol",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":2109212874,
+    "name":"South Somerset Rivers, Upper Reaches",
+    "location":"Dorset Council, Somerset (Wessex)",
+    "description":"Rising river levels today may lead to flooding. \nFlooding is possible on 04 December 2025 following heavy rain overnight. \nFlooding is forecast to affect areas near the River Isle and River Parrett, with low lying land and roads affected, particularly at Ashford Mill, Isle Brewers, Fivehead, the Norton sub Hambdon to Stratton road, the A356 and the B3165 at Chiselborough and the B3168 at Ilford Bridges. The lower River Parrett is forecast to be bankfull and overtopping could occur. After a drier day today, further heavy rain is forecast throughout much of Friday, 05\/12\/2025 and early Saturday. This will cause rivers to rise again, re-triggering this alert and further flooding later on Friday and Saturday. \nWe are closely monitoring the situation . We are clearing blockages from debris screens, bridges and culverts. \nTake care and avoid walking, cycling or driving through flood water . Start acting on your flood plan if you have one. \nThis message will be updated by 7:00PM on 04 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"medium",
+    "tags":[
+      "112waftssr",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":4075891358,
+    "name":"River Lugg south of Leominster",
+    "location":"Herefordshire (West Midlands)",
+    "description":"River levels remain high but steady at the Lugwardine river gauge. Flooding continues today 4 December 2025. Flooding may affect low lying land and roads adjacent to the River Lugg south of Leominster from Stoke Prior to Mordiford. Other locations that may be affected include Bodenham, Lugwardine and Hampton Bishop. We are closely monitoring the situation . Take care and avoid walking, cycling or driving through flood water . This message will be updated by 10:00AM on 05 December 2025 or as the situation changes\n",
+    "currentIssues":[
+      "flooding",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "wetland buffers"
+    ],
+    "priority":"medium",
+    "tags":[
+      "031waf116",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":1677254404,
+    "name":"River Yeo and River Parrett Moors around Muchelney and Thorney",
+    "location":"Somerset (Wessex)",
+    "description":"There is no longer a threat of flooding, though standing water and debris may still remain. \nFurther rainfall is forecast but no further flooding is expected. Further rain is forecast tonight into Thursday morning, 04\/12\/2025. This is not expected to trigger this alert again in the next 24 hours. \nWe will continue to monitor the situation and will issue further alerts or warnings if necessary.  \nContinue to take care on waterside roads and footpaths and don't put yourself in unnecessary danger. Never drive through flood water,  just 30cm of fast flowing water is enough to move your car. Please note there may still be flood water in fields and open land. \n\n",
+    "currentIssues":[
+      "fields at risk",
+      "heavy rainfall",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"low",
+    "tags":[
+      "112wafypm",
+      "flooding",
+      "fluvial",
+      "river",
+      "warning no longer in force"
+    ]
+  },
+  {
+    "id":3756478719,
+    "name":"Mid Bristol Avon area",
+    "location":"Bath and North East Somerset, Wiltshire (Wessex)",
+    "description":"This flood alert remains in place. Areas most at risk include low lying land and roads between Melksham and Bathford. The flood gates at Holt Road may be closed. Flooding is forecast to affect locations near the Bristol Avon, Semington Brook, with low lying land and roads expected to be most affected. Further rain is forecast tomorrow Friday 05\/12\/25 and over the weekend so river levels will stay high and the flood risk remains.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"medium",
+    "tags":[
+      "112waftmba",
+      "bristol",
+      "flood alert",
+      "flooding",
+      "fluvial"
+    ]
+  },
+  {
+    "id":580684510,
+    "name":"Rivers Clyst and Culm and their tributaries",
+    "location":"Devon, Somerset (Devon, Cornwall and the Isles of Scilly)",
+    "description":"High river levels today and tomorrow may lead to flooding. \nFlooding is possible overnight from 03 December 2025.\n \nForecast levels may cause flooding to low lying land and roads close to the rivers. The main areas of concern are Cullompton, Willand, Culmstock, Hemyock, Bradninch, Broadclyst and Clyst St Mary.\nWe expect river levels to respond to additional rainfall over the next few days. \nWe are closely monitoring the situation. \nTake care and avoid walking, cycling or driving through flood water. \nThis message will be updated by 4:00PM on 04 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"medium",
+    "tags":[
+      "113waftw07",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":453944721,
+    "name":"River Severn in Gloucestershire",
+    "location":"Gloucestershire, Worcestershire (West Midlands)",
+    "description":"River levels are currently rising due to rainfall, flooding may continue over the next few days. Flooding may affect low lying land and roads adjacent to the River Severn from Tewkesbury to Gloucester. Locations that may be affected include Apperley, Maisemore, Hempstead, Minsterworth Ham and Quedgeley. The Severn Ham, Tewkesbury may start to fill.\n\nPredicted peaks:-\nMythe 3.1m to 3.7m 06\/12\/2025 AM.\nHaw Bridge 4.2m to 4.7m 07\/12\/2025 PM.\n\nTides are increasing from Wednesday until the weekend. River levels at Sandhurst and Gloucester will be influenced by these tides. Current predictions:\n\nSandhurst 2.9m to 3.1m 03\/12\/2025 PM and 3.0m to 3.2m 04\/12\/2025 AM.\nGloucester 2.5m to 2.8m 03\/12\/2025 PM and 2.8m to 3.1m 04\/12\/2025 AM.\n\nAdditional rainfall is forecast Friday onwards, which may cause river levels to rise further.\n\nWe are closely monitoring the situation. Avoid using low lying footpaths and any bridges near local watercourses and avoid low lying roads near rivers, which may be flooded.\n\nThis message will be updated by 09:00AM on 5 December 2025, or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"medium",
+    "tags":[
+      "031waf214",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "severn"
+    ]
+  },
+  {
+    "id":1904572895,
+    "name":"River Axe area",
+    "location":"Devon, Dorset Council, Somerset (Devon, Cornwall and the Isles of Scilly)",
+    "description":"High river levels overnight may lead to flooding. \nFlooding is possible from the evening of 03 December 2025 overnight and into Thursday. \nA band of rain is expected on Wednesday evening. Forecast levels may cause flooding to low lying land and roads close to the rivers.\nThe main areas of concern are Seaton, Colyton, Axminster and Axmouth.\nWe expect river levels to remain high overnight and into tomorrow, though no flooding to properties is currently forecast. \nWe are closely monitoring the situation . \nTake care and avoid walking, cycling or driving through flood water . Avoid low lying roads near rivers, which may be flooded. \nThis message will be updated by 4:00PM on 04 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"medium",
+    "tags":[
+      "113wabtw09",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":3593606388,
+    "name":"Lower River Derwent",
+    "location":"East Riding of Yorkshire, North Yorkshire, York (Yorkshire)",
+    "description":"High river levels are expected to lead to flooding today, Thursday 04 December 2025. Flooding is possible over the next several days. Local roads and low-lying land around Stamford Bridge, Pocklington, Wressle, Wilberfoss and Elvington. The forecast remains unsettled this week and levels are expected to remain high. We are closely monitoring the situation. Take care and avoid walking, cycling or driving through flood water. This message will be updated by 9PM on 04 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "wetland buffers"
+    ],
+    "priority":"medium",
+    "tags":[
+      "122waf950",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":1065312550,
+    "name":"Upper River Derwent",
+    "location":"East Riding of Yorkshire, North Yorkshire (Yorkshire)",
+    "description":"High river levels may lead to flooding. Flooding is possible for the next several days. Locations most affected will be low lying land and roads near rivers, particularly around the Low Marishes and Malton area. We are monitoring rainfall and river levels. Take care and avoid walking, cycling or driving through flood water. This message will be updated by 9PM on 04 December 2025, or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "low-lying areas",
+      "river level rise",
+      "road flooding",
+      "storm surge",
+      "tidal flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "elevated greenways",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "living shorelines"
+    ],
+    "priority":"medium",
+    "tags":[
+      "122waf949",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":3134564298,
+    "name":"Upper River Tamar",
+    "location":"Cornwall, Devon (Devon, Cornwall and the Isles of Scilly)",
+    "description":"High river levels over the next two days may lead to flooding.   \n\nFlooding is possible on Thursday 04 December and on Friday 05 December. \n\nRiver levels remain high and a further band of rain is expected on Friday.  \n\nForecast levels may cause flooding to low lying land and roads close to the river.  \n\nWe expect the river to remain high overnight and into tomorrow, though no flooding to properties is currently forecast.   \n\nWe are monitoring rainfall and river levels.   \n\nTake care and avoid walking, cycling or driving through flood water. Avoid low lying roads near rivers, which may be flooded.   \n\nThis message will be updated by 3:00PM on 05 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"medium",
+    "tags":[
+      "114waft1w10a00",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":1696973989,
+    "name":"Middle Exe area",
+    "location":"Devon, Somerset (Devon, Cornwall and the Isles of Scilly)",
+    "description":"There is no longer a threat of flooding, though standing water and debris may still remain. \nWeather conditions are expected to improve and no further flooding is expected. However, a further band of rain is forecast throughout Friday and river levels are forecast to rise again. \nWe will continue to monitor the situation and will issue further alerts or warnings if necessary.   \nContinue to take care on waterside roads and footpaths and don't put yourself in unnecessary danger. Stay away from floodwater - it contains hidden dangers such as open manhole covers, sewage and chemicals.   \n\n",
+    "currentIssues":[
+      "heavy rainfall",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"low",
+    "tags":[
+      "113waftw06",
+      "flooding",
+      "fluvial",
+      "river",
+      "warning no longer in force"
+    ]
+  },
+  {
+    "id":2217591255,
+    "name":"River Teign area",
+    "location":"Devon, Torbay (Devon, Cornwall and the Isles of Scilly)",
+    "description":"There is no longer a threat of flooding, though standing water and debris may still remain. \nWeather conditions are expected to improve and no further flooding is expected. However, a further band of rain is forecast throughout Friday and river levels are forecast to rise again. \nWe will continue to monitor the situation and will issue further alerts or warnings if necessary.   \nContinue to take care on waterside roads and footpaths and don't put yourself in unnecessary danger. Stay away from floodwater - it contains hidden dangers such as open manhole covers, sewage and chemicals.   \n\n",
+    "currentIssues":[
+      "heavy rainfall",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"low",
+    "tags":[
+      "113waftw13",
+      "flooding",
+      "fluvial",
+      "river",
+      "warning no longer in force"
+    ]
+  },
+  {
+    "id":341302446,
+    "name":"Rivers Otter and Sid, and Exmouth area",
+    "location":"Devon, Somerset (Devon, Cornwall and the Isles of Scilly)",
+    "description":"There is no longer a threat of flooding, though standing water and debris may still remain. \nWeather conditions are expected to improve and no further flooding is expected. However, a further band of rain is forecast throughout Friday and river levels are forecast to rise again. \nWe will continue to monitor the situation and will issue further alerts or warnings if necessary.   \nContinue to take care on waterside roads and footpaths and don't put yourself in unnecessary danger. Stay away from floodwater - it contains hidden dangers such as open manhole covers, sewage and chemicals.   \n\n",
+    "currentIssues":[
+      "heavy rainfall",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"low",
+    "tags":[
+      "113wabtw08",
+      "flooding",
+      "fluvial",
+      "river",
+      "warning no longer in force"
+    ]
+  },
+  {
+    "id":1879566575,
+    "name":"West Somerset Streams",
+    "location":"Somerset (Wessex)",
+    "description":"With dry weather today, river levels have fallen on most rivers in West Somerset, but remain high on the Washford River. Further rainfall overnight tonight and into tomorrow morning, Thursday 04\/12\/2025, will keep the Washford River at Alert level, and will cause the other rivers to rise again. There is a risk of flooding tomorrow, Thursday. Locations most affected will be low lying land and roads near rivers including the Horner Water, Rivers Aller, Washford River and the Hawkcombe, Monksilver and Doniford Streams and tributaries. We continue to monitor rainfall and river levels. This message will be updated by 13:00PM on 04\/12\/2025, or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"medium",
+    "tags":[
+      "112waftwss",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "horner"
+    ]
+  },
+  {
+    "id":1538484586,
+    "name":"River Yealm",
+    "location":"Devon, Plymouth (Devon, Cornwall and the Isles of Scilly)",
+    "description":"High river levels may lead to flooding.  \n\nFlooding is possible on Friday 05 December. \n\nA band of rain is expected on Friday.  \n\nForecast river levels may cause flooding to low lying land and roads close to the river. \n\nThe main areas of concern are Yealmpton, Yealmbridge and Mill Bridge. \n\nWe expect the river to remain high overnight on Friday, though no flooding to properties is currently forecast.  \n\nWe are monitoring rainfall and river levels.  \n\nTake care and avoid walking, cycling or driving through flood water. Avoid low lying roads near rivers, which may be flooded.  \n\nThis message will be updated by 3:00PM on 05 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"medium",
+    "tags":[
+      "114waft1w13a00",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":2975425185,
+    "name":"Severn Vyrnwy confluence",
+    "location":"Shropshire (West Midlands)",
+    "description":"River levels remain high and the potential for flooding remains today 04 December 2025 . Flooding may affect low lying land and roads adjacent to the river from the Welsh border at Llawnt to Shrawardine near Shrewsbury. Other locations that may be affected include Llanymynech, Maesbrook and Melverley. Roads between Maesbrook, Melverley and Pentre start to flood. Peaks:- Cae Howel 4.4m to 4.5m on 04\/12 AM. We are closely monitoring the situation . Take care and avoid walking, cycling or driving through flood water . This message will be updated by 10:00AM on 05 December 2025 or as the situation changes\n",
+    "currentIssues":[
+      "flooding",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "wetland buffers"
+    ],
+    "priority":"medium",
+    "tags":[
+      "031waf114",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":2192238735,
+    "name":"South Devon Rivers",
+    "location":"Devon (Devon, Cornwall and the Isles of Scilly)",
+    "description":"There is no longer a threat of flooding, though standing water and debris may still remain. \nWeather conditions are expected to improve and no further flooding is expected. However, a further band of rain is forecast throughout Friday and river levels are forecast to rise again. \nWe will continue to monitor the situation and will issue further alerts or warnings if necessary.   \nContinue to take care on waterside roads and footpaths and don't put yourself in unnecessary danger. Stay away from floodwater - it contains hidden dangers such as open manhole covers, sewage and chemicals.   \n\n",
+    "currentIssues":[
+      "heavy rainfall",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"low",
+    "tags":[
+      "113wabtw15",
+      "flooding",
+      "fluvial",
+      "river",
+      "warning no longer in force"
+    ]
+  },
+  {
+    "id":1199635913,
+    "name":"North Sea coast at Withernsea, Easington and Kilnsea",
+    "location":"East Riding of Yorkshire (Yorkshire)",
+    "description":"High tides today may lead to flooding. \nFlooding is possible from 15:30 to 17:30 on Thursday 04 December 2025. \nHigh tides, strong winds and large waves may lead to overtopping. Locations most affected will be coastal roads and footpaths. \nWe are closely monitoring the situation . \nAvoid beaches and coastal promenades, which may be flooded . \nThis message will be updated by 9:00PM on 04 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "road flooding",
+      "storm surge",
+      "tidal flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "elevated greenways",
+      "green alleys",
+      "living shorelines",
+      "permeable paving",
+      "riparian wetlands"
+    ],
+    "priority":"medium",
+    "tags":[
+      "122wac956",
+      "flood alert",
+      "flooding",
+      "north",
+      "tidal"
+    ]
+  },
+  {
+    "id":3829686333,
+    "name":"Severn estuary from Gloucester to Sharpness",
+    "location":"Gloucestershire (West Midlands)",
+    "description":"Higher than normal tides this evening may lead to flooding. \nFlooding is possible from 8:30pm on Thursday evening and 9:00am on Friday morning. \nFlooding may affect low lying land and roads adjacent to the Estuary from Sandhurst to Chepstow and Sharpness over the next 5 days. Some lengths of the flood embankment at Longney and The Noards may be overtopped. Rodley Lane, Westbury and Awre Road, Brims Pill may be flooded. \n\nPredicted peaks: \nThursday evening 04\/12; Gloucester 3.1m to 3.4m at 8:30PM, Sandhurst 3.2m to 3.5m at 9:00pm. \n\nFriday morning 05\/12; Gloucester 3.2m to 3.5m at 9:00AM, Sandhurst 3.4m to 3.7m at 9:15pm. \nWe are closely monitoring the situation . \nMonitor local water levels and weather conditions . \nThis message will be updated by 2:00PM on 05 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "low-lying areas",
+      "road flooding",
+      "storm surge",
+      "tidal flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "elevated greenways",
+      "green alleys",
+      "living shorelines",
+      "permeable paving",
+      "riparian wetlands"
+    ],
+    "priority":"medium",
+    "tags":[
+      "031wat217",
+      "flood alert",
+      "flooding",
+      "severn",
+      "tidal"
+    ]
+  },
+  {
+    "id":734910833,
+    "name":"River Dee catchment in England from Whitchurch to Chester",
+    "location":"Cheshire West and Chester, Shropshire (Greater Manchester, Merseyside and Cheshire)",
+    "description":"River levels are due to remain high for the next few days.\n\nFlooding is forecast to affect locations near the River Dee. Flooding is possible at low lying land and roads around the River Dee at Shocklach, Farndon, Handley, Lower Kinnerton, Chester and Puddington.\n\nWe are monitoring rainfall and river levels.\n\nAvoid using low lying footpaths and any bridges near local watercourses and do not attempt to walk or drive through flood water.\n\nThis message will be updated by 16:00PM on 04 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"medium",
+    "tags":[
+      "013wafdee",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":1301821373,
+    "name":"River Severn in Worcestershire",
+    "location":"Gloucestershire, Shropshire, Worcestershire (West Midlands)",
+    "description":"River levels are currently rising due to rainfall, subsequently flooding may continue over the next few days. Flooding may affect low lying land & roads adjacent to the river from Highley to Tewkesbury; including Dog Lane Bewdley, Stourport, Diglis & Hylton Road towpath. Flooded drains may affect the racecourse & Worcester CCG. PLP should be installed. New Street gate is closed at Upton upon Severn.   \n\nPredicted peaks:- \n\nBewdley 2.9m to 3.2 m 04\/12\/2025 PM. \nWorcester 3.3m to 4.0m 05\/12\/2025 AM. \nDiglis 2.8m to 3.5m 05\/12\/2025 AM. \nKempsey Yacht Club 4.9m to 5.6m 05\/12\/25 AM. \nSaxons Lode 4.0m to 4.6m 05\/12\/25 PM. \n\nAdditional rainfall is forecast on Friday and into the weekend, which may cause river levels to rise further. \n\nWe are closely monitoring the situation. Avoid using low lying footpaths and any bridges near local watercourses and avoid low lying roads near rivers, which may be flooded.  Consider the installation of property flood resilience measures \n\nThis message will be updated by 09:00AM on 5 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"medium",
+    "tags":[
+      "031waf108",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":1912858903,
+    "name":"Kempsey Village",
+    "location":"Worcestershire (West Midlands)",
+    "description":"River levels are currently rising due to rainfall, subsequently flooding may continue over the next few days. Flooding may affect low lying land and Squires Walk in the area of the Hatfield Brook Kempsey.  \n\nKempsey Flood Alleviation Scheme may become operational from 05\/12\/2025 AM. \n\nPredicted peak:-  \nKempsey Yacht Club 4.9m to 5.6m 05\/12\/25 AM. \n\nAdditional rainfall is forecast on Friday and into the weekend, which may cause river levels to rise further. We are closely monitoring the situation. Avoid using low lying footpaths and any bridges near local watercourses and avoid low lying roads near rivers, which may be flooded.   \n\nThis message will be updated by 09:00AM on 5 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"medium",
+    "tags":[
+      "031waf201",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":3229831968,
+    "name":"River Trent in Derbyshire",
+    "location":"Derby, Derbyshire, Leicestershire (East Midlands)",
+    "description":"Due to recent rainfall, river levels remain high but are falling. Further rainfall is forecast today and over the next few days. Areas most at risk are low-lying agricultural land and roads including Willington, Barrow upon Trent, Swarkestone, Bargate Lane and the access roads to Willington Meadows, the Twyford Village access road, Church Lane at Barrow, and Ingleby Lane. River levels at Willington Gauge and Shardlow Gauge will continue to fall through this morning 04\/12\/2025, but will then rise again from this afternoon 04\/12\/25 into the following days. We are closely monitoring the situation. Take care and avoid walking, cycling or driving through flood water. This message will be updated by 9:00PM on 04 December 2025, or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"medium",
+    "tags":[
+      "034waf414",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":3737786803,
+    "name":"Upper River Ouse",
+    "location":"North Yorkshire, York (Yorkshire)",
+    "description":"High river levels may lead to flooding today Thursday 4 December. Locations most affected will be riverside footpaths and low-lying land in York and to the south as far as Naburn Lock, including Kings Staith, Queens Staith, and South Esplanade. Levels have peaked overnight and are beginning to fall, however the forecast remains unsettled this week. We are closely monitoring the situation. Take care and avoid walking, cycling or driving through flood water. This message will be updated by 9PM on 04 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "river level rise"
+    ],
+    "suitableSolutions":[
+      "floodplain restoration",
+      "green corridors",
+      "wetland buffers"
+    ],
+    "priority":"medium",
+    "tags":[
+      "122waf946",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":1849577952,
+    "name":"River Severn in Shropshire",
+    "location":"Shropshire, Telford and Wrekin, Worcestershire (West Midlands)",
+    "description":"River levels remain high but steady. The risk of flooding remains today, 04 December 2025 . Flooding may affect low lying land and roads adjacent the river from Shrewsbury to Upper Arley. Locations that may be affected are White Abbey, Coalbrookdale, Ironbridge and Bridgnorth. River Severn bankfull at White Abbey, floodplain may be filling at Hayes Basin. Predicted peaks:- Buildwas 3.5m to 3.7m on 04\/12 PM. We are closely monitoring the situation. Take care and avoid walking, cycling or driving through flood water. This message will be updated by 10:00AM on 05 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "wetland buffers"
+    ],
+    "priority":"medium",
+    "tags":[
+      "031waf103",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":890635823,
+    "name":"Rivers Brathay, Rothay and Winster",
+    "location":"Westmorland and Furness (Cumbria and Lancashire)",
+    "description":"River and Lake levels remain high due to recent rainfall. Scattered showers, some of which may be heavy, are expected throughout today Thursday 4th December. Locations most affected will be low lying land and roads near rivers Brathay, Rothay, Winster and other watercourses from Grasmere to Grange-over-Sands including low lying areas around Ambleside, Skelwith Bridge, Windermere, Hawkshead, Newby Bridge, Backbarrow, Cark and Cartmel. We continue to monitor the situation. Take care and avoid walking, cycling or driving through flood water. This message will be updated by 10AM on 05 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "rain gardens"
+    ],
+    "priority":"medium",
+    "tags":[
+      "011wafbr",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":2247977300,
+    "name":"Upper River Derwent, Stonethwaite Beck and Derwent Water",
+    "location":"Cumberland (Cumbria and Lancashire)",
+    "description":"River and Lake levels remain high following recent heavy rainfall. Further scattered showers are expected today, Thursday 4\/12\/2025. Some of these showers will be heavy, which will keep river and lake levels elevated. We continue to monitor the situation. This message will be updated by 10:00AM on Friday 05 December 2025, or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "river level rise"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green corridors",
+      "permeable paving",
+      "rain gardens",
+      "shade trees"
+    ],
+    "priority":"medium",
+    "tags":[
+      "011wafdw",
+      "derwent,",
+      "flood alert",
+      "flooding",
+      "fluvial"
+    ]
+  },
+  {
+    "id":2864848662,
+    "name":"River Ouse at York - riverside properties",
+    "location":"York (Yorkshire)",
+    "description":"There is no longer a threat of flooding, though standing water and debris may still remain. \nWeather conditions are expected to improve and no further flooding is expected.   \nWe will continue to monitor the situation and will issue further alerts or warnings if necessary.   \nContinue to take care on waterside roads and footpaths and don't put yourself in unnecessary danger. Never drive through flood water,  just 30cm of fast flowing water is enough to move your car.   \n\n",
+    "currentIssues":[
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "wetland buffers"
+    ],
+    "priority":"low",
+    "tags":[
+      "122fwf710",
+      "flooding",
+      "fluvial",
+      "river",
+      "warning no longer in force"
+    ]
+  },
+  {
+    "id":823955459,
+    "name":"Holderness Drain",
+    "location":"East Riding of Yorkshire, Kingston upon Hull (Yorkshire)",
+    "description":"High river levels are expected to cause flooding today, Thursday 04\/12\/2025 in the Holderness Drain area including Leven and Bransholme. The forecast remains unsettled this week. We are closely monitoring the situation and have pumps in operation in the area. Take care and avoid walking, cycling or driving through flood water. This message will be updated by 9PM on 04 December 2025, or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "heavy rainfall",
+      "river level rise"
+    ],
+    "suitableSolutions":[
+      "bioswales",
+      "floodplain restoration",
+      "green corridors",
+      "permeable paving",
+      "rain gardens",
+      "shade trees"
+    ],
+    "priority":"medium",
+    "tags":[
+      "122waf971",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "winestead"
+    ]
+  },
+  {
+    "id":1654777135,
+    "name":"River Foulness and Market Weighton catchment",
+    "location":"East Riding of Yorkshire (Yorkshire)",
+    "description":"High river levels may lead to flooding. Flooding is possible over the next several days. Locations most affected will be low lying land and roads near Welham Bridge. The forecast remains unsettled this week. We are closely monitoring the situation. Take care and avoid walking, cycling or driving through flood water. This message will be updated by 9PM on 04 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "wetland buffers"
+    ],
+    "priority":"medium",
+    "tags":[
+      "122waf974",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":2553156682,
+    "name":"River Derwent at Buttercrambe Mill",
+    "location":"North Yorkshire (Yorkshire)",
+    "description":"High river levels are expected to continue to cause flooding in Buttercrambe today, Thursday 04 December 2025. Locations most affected will be Buttercrambe Mill at Buttercrambe Bridge. Levels have peaked and remain steady. They are expected to decline marginally in the coming days. Take care and avoid walking, cycling or driving through flood water. This message will be updated by 9PM on 04 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "river level rise"
+    ],
+    "suitableSolutions":[
+      "floodplain restoration",
+      "green corridors",
+      "wetland buffers"
+    ],
+    "priority":"high",
+    "tags":[
+      "122fwf650",
+      "flood warning",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":84027990,
+    "name":"North Holderness",
+    "location":"East Riding of Yorkshire (Yorkshire)",
+    "description":"High river levels may lead to flooding. Flooding is possible over the next several days. Locations most affected will be low lying land and roads near rivers, especially land around Barmston. The forecast remains unsettled this week. We are closely monitoring the situation. Take care and avoid walking, cycling or driving through flood water. This message will be updated by 9PM on 04 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "wetland buffers"
+    ],
+    "priority":"medium",
+    "tags":[
+      "122waf978",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "holderness"
+    ]
+  },
+  {
+    "id":2916133987,
+    "name":"River Derwent at Stamford Bridge - The Weir Caravan Park and Kexby Bridge",
+    "location":"East Riding of Yorkshire, North Yorkshire (Yorkshire)",
+    "description":"High river levels are expected to cause flooding today, Thursday 04 December 2025. Locations most affected will be riverside footpaths and low-lying land and property in Stamford Bridge, including the Weir Caravan Park. The forecast remains unsettled this week. We are closely monitoring the situation. Take care and avoid walking, cycling or driving through flood water. Please activate your flood plan. This message will be updated by 9PM on 04 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "river level rise"
+    ],
+    "suitableSolutions":[
+      "floodplain restoration",
+      "green corridors",
+      "wetland buffers"
+    ],
+    "priority":"high",
+    "tags":[
+      "122fwf652",
+      "flood warning",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":2320997397,
+    "name":"Minor Watercourses from Heighington to Dunston",
+    "location":"Lincolnshire (Lincolnshire and Northamptonshire)",
+    "description":"High river levels on Thursday may lead to flooding. Flooding is possible on 4th December 2025. Locations most affected will be low lying land and roads near rivers. Our forecasts indicate that flooding to properties isn't likely and therefore flood warnings are not expected to be issued. We are closely monitoring the situation. Take care and avoid walking, cycling or driving through flood water. Avoid low lying roads near rivers which may be flooded. This message will be updated by 11:00am on Friday, 5th December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "low-lying areas",
+      "river level rise",
+      "road flooding"
+    ],
+    "suitableSolutions":[
+      "floodplain restoration",
+      "green alleys",
+      "green corridors",
+      "permeable paving",
+      "wetland buffers"
+    ],
+    "priority":"medium",
+    "tags":[
+      "053waf119mnk",
+      "flood alert",
+      "flooding",
+      "fluvial",
+      "heighington"
+    ]
+  },
+  {
+    "id":1171134896,
+    "name":"Holderness Drain at Wawne Common and Woody Carr",
+    "location":"East Riding of Yorkshire, Kingston upon Hull (Yorkshire)",
+    "description":"High river levels are expected to cause flooding today. Flooding is expected today, Thursday 04 December 2025. Properties most affected include areas around Wawne Common, Woody Carr and North's Bridge. We are closely monitoring the situation and have pumps in operation in the area. Take care and avoid walking, cycling or driving through flood water. This message will be updated by 9PM on 04 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "river level rise"
+    ],
+    "suitableSolutions":[
+      "floodplain restoration",
+      "green corridors",
+      "wetland buffers"
+    ],
+    "priority":"high",
+    "tags":[
+      "122fwf101",
+      "flood warning",
+      "flooding",
+      "fluvial",
+      "holderness"
+    ]
+  },
+  {
+    "id":3121418176,
+    "name":"Holderness Drain and Leven Drain at Leven",
+    "location":"East Riding of Yorkshire (Yorkshire)",
+    "description":"High river levels are expected to cause flooding today. Flooding is expected today, Thursday 04 December 2025. Locations most affected will be Leven village. We are closely monitoring the situation and have pumps in operation in the area. Take care and avoid walking, cycling or driving through flood water. This message will be updated by 9PM on 04 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "river level rise"
+    ],
+    "suitableSolutions":[
+      "floodplain restoration",
+      "green corridors",
+      "wetland buffers"
+    ],
+    "priority":"high",
+    "tags":[
+      "122fwf103",
+      "flood warning",
+      "flooding",
+      "fluvial",
+      "river"
+    ]
+  },
+  {
+    "id":695186157,
+    "name":"Holderness Drain and Leven Drain in Leven village",
+    "location":"East Riding of Yorkshire (Yorkshire)",
+    "description":"High river levels are expected to cause flooding today. Flooding is expected today, Thursday 04 December 2025. Locations most affected will be Leven village. We are closely monitoring the situation and have pumps in operation in the area. Take care and avoid walking, cycling or driving through flood water. This message will be updated by 9PM on 04 December 2025 or as the situation changes.\n",
+    "currentIssues":[
+      "flooding",
+      "river level rise"
+    ],
+    "suitableSolutions":[
+      "floodplain restoration",
+      "green corridors",
+      "wetland buffers"
+    ],
+    "priority":"high",
+    "tags":[
+      "122fwf130",
+      "flood warning",
+      "flooding",
+      "fluvial",
+      "holderness"
+    ]
+  }
+]

@@ -8,11 +8,11 @@ DB_DIR = "db"
 class FakeEmbeddings:
     def embed_documents(self, texts):
         # Return a list of vectors (dummy embeddings)
-        return [np.random.rand(1536).tolist() for _ in texts]
+        return [np.random.rand(384).tolist() for _ in texts]
 
     def embed_query(self, text):
         # Return a single vector for the query
-        return np.random.rand(1536).tolist()
+        return np.random.rand(384).tolist()
 
 
 embeddings = FakeEmbeddings()
